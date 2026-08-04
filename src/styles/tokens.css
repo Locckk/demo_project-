@@ -1,0 +1,75 @@
+/* ==========================================================================
+   TOKENS & TYPOGRAPHY
+   OWNER: Dev A — nobody else edits this file.
+   Every colour and typeface in the app is defined here. Overriding
+   Bootstrap's own variables means .btn-primary, .bg-primary, .text-danger
+   and the rest follow our palette with no per-component overrides.
+
+   Need a colour that isn't here? Ask Dev A. One commit, and it's available
+   to everyone. Do not add it to your own file — that's how two people end
+   up defining --srms-teal differently.
+   ========================================================================== */
+
+
+:root {
+  /* our palette */
+  --srms-ink: #14181f;
+  --srms-slate: #2a323d;
+  --srms-muted: #4a5462;
+  --srms-chalk: #f6f5f1;
+  --srms-brass: #b8873b;
+  --srms-brass-soft: #f2e7d2;
+  --srms-sage: #4c7a5a;
+  --srms-sage-soft: #e3ede6;
+  --srms-clay: #b4503c;
+  --srms-clay-soft: #f7e3df;
+
+  /* Bootstrap overrides */
+  --bs-primary: #14181f;
+  --bs-primary-rgb: 20, 24, 31;
+  --bs-warning: #b8873b;
+  --bs-warning-rgb: 184, 135, 59;
+  --bs-success: #4c7a5a;
+  --bs-success-rgb: 76, 122, 90;
+  --bs-danger: #b4503c;
+  --bs-danger-rgb: 180, 80, 60;
+
+  --bs-body-bg: #f6f5f1;
+  --bs-body-color: #14181f;
+  --bs-secondary-color: #4a5462;
+  --bs-border-color: rgba(20, 24, 31, 0.1);
+  --bs-border-radius: 0.5rem;
+  --bs-link-color: #b8873b;
+  --bs-link-hover-color: #966d2e;
+}
+
+
+
+body {
+  font-family: "Public Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .display-font {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Small uppercase caption above fields, table headers and stat labels */
+.label-caps {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--srms-muted);
+}
+
+.text-brass {
+  color: var(--srms-brass) !important;
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Suit Rental Management System — stylesheet entry point
+
+   This file contains four import lines and nothing else.
+   It is written once, in week 1, and never edited again.
+
+   Every rule lives in an owned file under styles/. Two developers can add
+   CSS on the same afternoon and Git will never ask either of them a
+   question, because they are writing to different files.
+
+     styles/tokens.css   Dev A   palette, Bootstrap variables, typography
+     styles/shell.css    Dev C   sidebar, top bar, responsive frame
+     styles/ui.css       Dev B   badges, tables, modals, toasts
+     styles/pages.css    Dev A   dashboard, login, accessibility
+
+   Order matters: tokens first, because everything below reads its variables.
+   ========================================================================== */
+
+@import "./styles/tokens.css";
+@import "./styles/shell.css";
+@import "./styles/ui.css";
+@import "./styles/pages.css";
